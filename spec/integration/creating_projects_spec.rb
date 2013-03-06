@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 feature 'Creating Projects' do
+
   scenario "can create project" do
     visit '/'
     click_link 'New Project'
@@ -10,13 +11,20 @@ feature 'Creating Projects' do
     page.should have_content('Project has been created.')
 
     project = Project.find_by_name("TextMate 2")
-
     page.current_url.should == project_url(project)
 
     title = "TextMate 2 - Projects - Ticketee"
-
     find("title").should have_content(title)
   end
+
+  scenario "can not create a project without a name" do
+    visit '/'
+    click_link 'New Project'
+    click_button 'Create Project'
+    page.should have_content("Project has been created.")
+    page.should have_content("Name can't be blank")
+  end
+
 end
 
 
