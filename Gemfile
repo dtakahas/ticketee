@@ -42,6 +42,10 @@ gem 'dynamic_form'
 group :test, :development do
   gem 'rspec-rails', '~> 2.11'
   gem 'factory_girl', '2.6.2'
+  gem 'pry-rails'
+  gem 'pry-doc'
+  gem 'pry-debugger'
+  gem 'launchy'
 end
 
 group :test do
