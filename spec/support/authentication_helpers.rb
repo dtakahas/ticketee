@@ -10,6 +10,6 @@ module AuthenticationHelpers
 end
 
 
-Rspec.configure do |c|
+RSpec.configure do |c|
   c.include AuthenticationHelpers, :type => :request
 end
