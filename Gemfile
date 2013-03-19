@@ -52,6 +52,7 @@ group :test do
   gem 'capybara', '1.1.2'
   gem 'email_spec', '1.2.1'
   gem 'database_cleaner', '0.7.2'
+  gem 'simplecov', :require => false
 end
 
 gem 'devise'
