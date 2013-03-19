@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.2.12'
+gem 'rails'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -51,6 +51,7 @@ end
 group :test do
   gem 'capybara', '1.1.2'
   gem 'email_spec', '1.2.1'
+  gem 'database_cleaner', '0.7.2'
 end
 
 gem 'devise'

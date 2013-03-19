@@ -55,6 +55,7 @@ GEM
       execjs
     coffee-script-source (1.6.1)
     columnize (0.3.6)
+    database_cleaner (0.7.2)
     debugger (1.4.0)
       columnize (>= 0.3.1)
       debugger-linecache (~> 1.1.1)
@@ -195,6 +196,7 @@ DEPENDENCIES
   cancan
   capybara (= 1.1.2)
   coffee-rails (~> 3.2.1)
+  database_cleaner (= 0.7.2)
   devise
   dynamic_form
   email_spec (= 1.2.1)
@@ -205,7 +207,7 @@ DEPENDENCIES
   pry-debugger
   pry-doc
   pry-rails
-  rails (= 3.2.12)
+  rails
   rspec-rails (~> 2.11)
   sass-rails (~> 3.2.3)
   sqlite3
