@@ -17,7 +17,7 @@
         1,
         null,
         1,
-        41,
+        42,
         null,
         null,
         null
@@ -41,19 +41,19 @@
         1,
         null,
         1,
-        29,
-        29,
-        29,
+        31,
+        31,
+        31,
         null,
         null,
         null,
         null,
         1,
-        299,
+        315,
         null,
         null,
         1,
-        63,
+        73,
         null,
         null
       ],
@@ -72,6 +72,10 @@
         null
       ],
       "/Users/Dave/CodeFellows/ticketee/app/helpers/admin/users_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/Dave/CodeFellows/ticketee/app/helpers/comments_helper.rb": [
         1,
         null
       ],
@@ -200,6 +204,39 @@
         null,
         null
       ],
+      "/Users/Dave/CodeFellows/ticketee/app/controllers/comments_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        2,
+        null,
+        null
+      ],
+      "/Users/Dave/CodeFellows/ticketee/app/models/comment.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null
+      ],
       "/Users/Dave/CodeFellows/ticketee/app/controllers/files_controller.rb": [
         1,
         null,
@@ -233,7 +270,7 @@
         1,
         null,
         1,
-        76,
+        80,
         null,
         null,
         1,
@@ -278,7 +315,7 @@
         1,
         null,
         1,
-        38,
+        40,
         null,
         4,
         4,
@@ -297,11 +334,11 @@
         1,
         null,
         1,
-        98,
+        107,
         null,
         null,
         1,
-        155,
+        164,
         null,
         null,
         null
@@ -345,6 +382,7 @@
         null,
         null,
         1,
+        20,
         null,
         null,
         1,
@@ -369,14 +407,14 @@
         1,
         null,
         1,
-        41,
+        44,
         null,
         1,
         1,
         null,
         null,
         1,
-        28,
+        31,
         null,
         null,
         1,
@@ -414,6 +452,7 @@
         null,
         1,
         1,
+        1,
         null,
         null
       ],
@@ -429,8 +468,8 @@
         1,
         null,
         1,
-        79,
-        112,
+        85,
+        118,
         null,
         null,
         41,
@@ -449,6 +488,6 @@
         null
       ]
     },
-    "timestamp": 1363714941
+    "timestamp": 1363843119
   }
 }
