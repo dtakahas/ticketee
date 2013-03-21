@@ -2,6 +2,7 @@ class CommentsController < ApplicationController
   before_filter :authenticate_user!
   before_filter :find_ticket
 
+
   def create
     @comment = @ticket.comments.build(params[:comment])
     @comment.user = current_user
