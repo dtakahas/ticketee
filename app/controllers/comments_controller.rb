@@ -4,6 +4,9 @@ class CommentsController < ApplicationController
 
 
   def create
+    if cannot?(:"change states", @ticket.project)
+      params[:comment].delete(:state_id)
+    end
     @comment = @ticket.comments.build(params[:comment])
     @comment.user = current_user
     if @comment.save
