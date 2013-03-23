@@ -1,10 +1,11 @@
+
 module TicketsHelper
   def state_for(comment)
     content_tag(:div, :class => "states") do
       if comment.state
         previous_state = comment.previous_state
         if previous_state && comment.state != previous_state
-          "#{previous_state} &rarr; #{comment.state}"
+          raw "#{previous_state} &rarr; #{comment.state}"
         else
           render(comment.state)
         end
