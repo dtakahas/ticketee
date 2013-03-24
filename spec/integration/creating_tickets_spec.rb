@@ -5,6 +5,7 @@ require 'spec_helper'
       project = Factory(:project, :name => "Internet Explorer")
       user = Factory(:confirmed_user, :email => "ticketee@example.com")
       define_permission!(user, "view", project)
+      define_permission!(user, "tag", project)
       define_permission!(user, "create tickets", project)
       sign_in_as!(user)
 

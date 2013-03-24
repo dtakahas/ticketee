@@ -13,6 +13,9 @@ before_filter :authorize_delete!, :only => :destroy
   end
 
   def create
+    if cannot?(:tag, @project)
+      params[:ticket].delete(:tag_names)
+    end
     @ticket = @project.tickets.build(params[:ticket])
     @ticket.user = current_user
 
@@ -47,6 +50,11 @@ before_filter :authorize_delete!, :only => :destroy
     @ticket.destroy
     flash[:notice] = "Ticket has been deleted."
     redirect_to @project
+  end
+
+  def search
+    @tickets = @project.tickets.search(params[:search])
+    render "projects/show"
   end
 
 private

@@ -59,3 +59,4 @@ gem 'devise'
 gem 'cancan'
 
 gem 'paperclip', '2.7.0'
+gem 'searcher', :git => "git://github.com/radar/searcher"
