@@ -24,6 +24,12 @@ feature "Watching tickets" do
     within("#watchers") do
       page.should_not have_content(user.email)
     end
+
+    click_button "Watch this ticket"
+    page.should have_content("You are now watching this ticket.")
+    within("#watchers") do
+      page.should have_content(user.email)
+    end
   end
 
 end

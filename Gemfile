@@ -46,6 +46,7 @@ group :test, :development do
   gem 'pry-doc'
   gem 'pry-debugger'
   gem 'launchy'
+  gem 'gmail', '0.4.0'
 end
 
 group :test do
